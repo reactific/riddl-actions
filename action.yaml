@@ -1,0 +1,16 @@
+# action.yml
+name: 'riddlc'
+description: 'Run the riddlc translator'
+inputs:
+  command-line:  # any command line arguments to riddlc compiler
+    description: 'Arguments for the riddlc translator'
+    required: true
+    default: 'help'
+outputs:
+  messages: # result of compilation
+    description: 'Messages from the compiler about the compilation'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command-line }}

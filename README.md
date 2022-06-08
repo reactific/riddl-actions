@@ -1,2 +1,2 @@
 # riddl-actions
-GitHub Actions For RIDDL
+GitHub Actions For RIDDL Translator
