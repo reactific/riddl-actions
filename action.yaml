@@ -2,10 +2,35 @@
 name: 'riddlc'
 description: 'Run the riddlc translator'
 inputs:
-  command-line:  # any command line arguments to riddlc compiler
-    description: 'Arguments for the riddlc translator'
+  command:  # one of the commands of riddlc compiler
+    description: 'The command that riddlc should run'
     required: true
     default: 'help'
+  opt1:
+    description: 'Optional argument 1'
+    required: false
+  opt2:
+    description: 'Optional argument 2'
+    required: false
+  opt3:
+    description: 'Optional argument 3'
+    required: false
+  opt4:
+    description: 'Optional argument 4'
+    required: false
+  opt5:
+    description: 'Optional argument 5'
+    required: false
+  opt6:
+    description: 'Optional argument 6'
+    required: false
+  opt7:
+    description: 'Optional argument 7'
+    required: false
+  opt8:
+    description: 'Optional argument 8'
+    required: false
+
 outputs:
   messages: # result of compilation
     description: 'Messages from the compiler about the compilation'
