@@ -34,8 +34,17 @@ inputs:
 outputs:
   messages: # result of compilation
     description: 'Messages from the compiler about the compilation'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.command-line }}
+    - ${{ inputs.command }}
+    - ${{ inputs.opt1 }}
+    - ${{ inputs.opt2 }}
+    - ${{ inputs.opt3 }}
+    - ${{ inputs.opt4 }}
+    - ${{ inputs.opt5 }}
+    - ${{ inputs.opt6 }}
+    - ${{ inputs.opt7 }}
+    - ${{ inputs.opt8 }}
