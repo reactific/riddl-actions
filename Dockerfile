@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM openjdk:11-jre
+FROM openjdk:17.0.2-oraclelinux8
 
 WORKDIR /app
 
