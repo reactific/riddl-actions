@@ -1,9 +1,9 @@
 # action.yml
-name: 'riddlc'
-description: 'Run the riddlc translator'
+name: 'riddlc-docker'
+description: 'Run the riddlc-docker translator'
 inputs:
-  command:  # one of the commands of riddlc compiler
-    description: 'The command that riddlc should run'
+  command:  # one of the commands of riddlc-docker compiler
+    description: 'The command that riddlc-docker should run'
     required: true
     default: 'help'
   opt1:
