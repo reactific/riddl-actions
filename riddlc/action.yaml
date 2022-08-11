@@ -40,8 +40,7 @@ runs:
         distribution: 'temurin'
         java-version: '17'
     - run: |
-        wget --quiet https://oss.sonatype.org/service/local/repositories/comreactific-1076/content/com/reactific/riddlc/0.5.8/riddlc-0.5.8.tgz
-        tar zxf riddlc-0.5.8.tgz
-        riddlc-0.5.8/bin/riddlc ${{ inputs.command }} ${{ inputs.opt1 }} ${{ inputs.opt2 }} ${{ inputs.opt3 }} \
-        ${{ inputs.opt4 }} ${{ inputs.opt5 }} ${{ inputs.opt6 }}  ${{ inputs.opt7 }} ${{ inputs.opt8 }}
+        wget --quiet https://github.com/reactific/riddl/releases/download/0.6.0/riddlc-0.6.0.zip
+        tar zxf riddlc-0.6.0.tgz
+        riddlc-0.6.0/bin/riddlc ${{ inputs.command }} ${{ inputs.opt1 }} ${{ inputs.opt2 }} ${{ inputs.opt3 }} ${{ inputs.opt4 }} ${{ inputs.opt5 }} ${{ inputs.opt6 }}  ${{ inputs.opt7 }} ${{ inputs.opt8 }}
       shell: bash
