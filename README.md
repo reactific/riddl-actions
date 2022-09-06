@@ -1,2 +1,3 @@
 # riddl-actions
-GitHub Actions For RIDDL Translator
+This provides GitHub actions for [RIDDL](https://riddl.tech/) by invoking
+the RIDDL compiler, `riddlc`.  
