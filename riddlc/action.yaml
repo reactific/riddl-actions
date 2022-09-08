@@ -1,9 +1,9 @@
-# action.yml
-name: 'riddlc-docker'
-description: 'Run the riddlc-docker translator'
+# The action script for running riddlc
+name: 'riddlc'
+description: 'Run the riddlc translator'
 inputs:
-  command:  # one of the commands of riddlc-docker compiler
-    description: 'The command that riddlc-docker should run'
+  command:  #
+    description: 'The name of the command to pass to the riddlc compiler'
     required: true
     default: 'help'
   opt1:
@@ -40,7 +40,7 @@ runs:
         distribution: 'temurin'
         java-version: '17'
     - run: |
-        wget --quiet https://github.com/reactific/riddl/releases/download/0.12.0/riddlc-0.12.0.zip
-        unzip riddlc-0.12.0.zip
-        riddlc-0.12.0/bin/riddlc ${{ inputs.command }} ${{ inputs.opt1 }} ${{ inputs.opt2 }} ${{ inputs.opt3 }} ${{ inputs.opt4 }} ${{ inputs.opt5 }} ${{ inputs.opt6 }}  ${{ inputs.opt7 }} ${{ inputs.opt8 }}
+        wget --quiet https://github.com/reactific/riddl/releases/download/0.13.0/riddlc-0.12.0.zip
+        unzip riddlc-0.13.0.zip
+        riddlc-0.13.0/bin/riddlc ${{ inputs.command }} ${{ inputs.opt1 }} ${{ inputs.opt2 }} ${{ inputs.opt3 }} ${{ inputs.opt4 }} ${{ inputs.opt5 }} ${{ inputs.opt6 }}  ${{ inputs.opt7 }} ${{ inputs.opt8 }}
       shell: bash
